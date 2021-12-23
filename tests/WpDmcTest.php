@@ -66,7 +66,7 @@ class wpdmcTest extends TestCase
      * @preserveGlobalState disabled
      * @dataProvider provideConstFalsyValues
      */
-    public function it_returns_false_if_specified_constant_is_false_or_falsy($value)
+    public function it_returns_false_if_target_constant_is_false_or_falsy($value)
     {
         $this->defineConst($value);
 
@@ -81,7 +81,7 @@ class wpdmcTest extends TestCase
      * @preserveGlobalState disabled
      * @dataProvider provideConstTruthyValues
      */
-    public function it_returns_true_if_specified_constant_is_true_or_truthy($value)
+    public function it_returns_true_if_target_constant_is_true_or_truthy($value)
     {
         $this->defineConst($value);
 
