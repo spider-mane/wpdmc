@@ -1,0 +1,46 @@
+{
+  "name": "webtheory/wpdmc",
+  "type": "library",
+  "description": "Disable WordPress debug mode checks via constant definition",
+  "homepage": "https://github.com/spider-mane/wpdmc",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Chris Williams",
+      "email": "spider.mane.web@gmail.com",
+      "homepage": "https://github.com/spider-mane",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wpdmc",
+    "webtheory"
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "fakerphp/faker": "^1.17",
+    "phpunit/phpunit": "^9.5",
+    "webtheory/exterminate": "@stable"
+  },
+  "autoload": {
+    "files": [
+      "src/wp-dmc.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "collect": "vendor/bin/var-dump-server"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
